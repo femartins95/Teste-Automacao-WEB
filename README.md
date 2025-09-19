@@ -114,4 +114,4 @@ ROBOTFRAMEWORK/
 
 ## 👨‍💻 Autor
 
-Projeto criado para avalição para vaga Dr Consulta com **Robot Framework** 🚀
+Este projeto contém automação de testes end-to-end para a aplicação **My Shop** com **Robot Framework** 🚀
