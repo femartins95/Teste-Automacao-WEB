@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-18T23:41:50.503514" rpa="false" schemaversion="5">
+<suite id="s1" name="Catalogodeprodutos Testes" source="C:\CursoUdemy\RobotFramework\WebTesting\catalogodeprodutos_testes.robot">
+<test id="s1-t1" name="Cenario 04: Validar quando estiver logado após seleção de produto consigo saber o valor da compra e avançar para tela de endereço" line="45">
+<kw name="Open Application" owner="hooks" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:41:50.880236" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-18T23:41:50.879998" elapsed="1.953322"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-18T23:41:52.833846" elapsed="0.032215"/>
+</kw>
+<status status="PASS" start="2025-09-18T23:41:50.879187" elapsed="1.987039"/>
+</kw>
+<kw name="Dado que eu esteja na tela de login do 'My Shop'" owner="kws_autenticacao">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:41:52.867896" elapsed="0.001189"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:41:52.869993" elapsed="0.000835"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Abrindo Navegador e acessando o site</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:41:52.871133" elapsed="0.000373"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:41:52.871771" elapsed="0.000437"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:41:52.872794" level="INFO">Opening url 'http://www.automationpractice.pl/index.php'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-09-18T23:41:52.872518" elapsed="16.587902"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T23:42:14.462426" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T23:42:09.461146" elapsed="5.001628"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:42:14.700780" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-147.png"&gt;&lt;img src="selenium-screenshot-147.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-18T23:42:14.463307" elapsed="0.237697"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:42:14.701894" level="INFO">Clicking element 'css:a.login'.</msg>
+<arg>${MENU_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T23:42:14.701210" elapsed="1.822188"/>
+</kw>
+<status status="PASS" start="2025-09-18T23:41:52.866881" elapsed="23.656733"/>
+</kw>
+<kw name="E preencher o campo 'Email' e 'Senha' corretos no 'My Shop'" owner="kws_autenticacao">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:42:16.524612" elapsed="0.000336"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:42:16.525163" elapsed="0.000271"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Informando 'E-mail' e 'Senha' correta</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:42:16.525629" elapsed="0.000238"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:42:16.526012" elapsed="0.000254"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${CRIAR_CONTA}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-18T23:42:16.526477" elapsed="0.372699"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T23:42:18.900732" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T23:42:16.899525" elapsed="2.001585"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:42:18.902809" level="INFO">Typing text 'projeto.teste@gmail.com' into text field 'id=email'.</msg>
+<arg>${INPUT_EMAIL_LOGIN}</arg>
+<arg>projeto.teste@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T23:42:18.901852" elapsed="0.187357"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:42:19.089708" level="INFO">Typing text 'Teste@12345' into text field 'id=passwd'.</msg>
+<arg>${INPUT_SENHA}</arg>
+<arg>Teste@12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T23:42:19.089417" elapsed="0.113184"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:42:19.355855" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-148.png"&gt;&lt;img src="selenium-screenshot-148.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-18T23:42:19.202807" elapsed="0.153196"/>
+</kw>
+<status status="PASS" start="2025-09-18T23:42:16.524160" elapsed="2.831938"/>
+</kw>
+<kw name="E clicar no botão 'Sign in'" owner="kws_autenticacao">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:42:19.356799" elapsed="0.000255"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:42:19.357191" elapsed="0.000238"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Clicando no botão 'Sign in'</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:42:19.357583" elapsed="0.000230"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:42:19.357950" elapsed="0.000233"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T23:42:21.358926" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T23:42:19.358329" elapsed="2.000972"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${BOTAO_LOGIN}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-18T23:42:21.359978" elapsed="0.047353"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:42:21.408510" level="INFO">Clicking button 'id=SubmitLogin'.</msg>
+<arg>${BOTAO_LOGIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T23:42:21.407697" elapsed="1.533305"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T23:42:24.942051" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T23:42:22.941182" elapsed="2.001237"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:42:25.051856" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-149.png"&gt;&lt;img src="selenium-screenshot-149.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-18T23:42:24.943084" elapsed="0.108938"/>
+</kw>
+<status status="PASS" start="2025-09-18T23:42:19.356526" elapsed="5.695620"/>
+</kw>
+<kw name="E realizar navegação do menu Dresses" owner="kws_catalogodeprodutos">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:42:25.052902" elapsed="0.000260"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:42:25.053400" elapsed="0.000239"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Clicando no botões do menu para navegação 'Dresses'</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:42:25.053794" elapsed="0.000231"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:42:25.054197" elapsed="0.000237"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T23:42:27.055738" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T23:42:25.054581" elapsed="2.001524"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MENU_DRESSES}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-18T23:42:27.056801" elapsed="0.056222"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:42:27.113802" level="INFO">Clicking element 'xpath=(//a[@title='Dresses'][normalize-space()='Dresses'])[2]'.</msg>
+<arg>${MENU_DRESSES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T23:42:27.113382" elapsed="37.879783"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:43:04.994175" level="INFO">Clicking element 'xpath=(//a[@title='Dresses'][normalize-space()='Dresses'])[2]'.</msg>
+<arg>${MENU_DRESSES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T23:43:04.993646" elapsed="1.279533"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T23:43:08.274288" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T23:43:06.273509" elapsed="2.000948"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Dresses</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-18T23:43:08.274770" elapsed="0.028507"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:43:08.436200" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-150.png"&gt;&lt;img src="selenium-screenshot-150.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-18T23:43:08.303514" elapsed="0.132822"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T23:43:10.437283" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T23:43:08.436505" elapsed="2.001167"/>
+</kw>
+<status status="PASS" start="2025-09-18T23:42:25.052583" elapsed="45.385516"/>
+</kw>
+<kw name=" E clicar sobre o produto que quero comprar" owner="kws_catalogodeprodutos">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:10.441104" elapsed="0.001090"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:10.443003" elapsed="0.001074"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Clicando sobre o produto pesquisado para visualizar mais detalhes</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:10.444904" elapsed="0.001350"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:10.447131" elapsed="0.001441"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${BOTAO_SOBREUMPRODUTODRESS}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-18T23:43:10.449430" elapsed="0.335159"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BOTAO_SOBREUMPRODUTODRESS}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-18T23:43:10.784902" elapsed="0.043708"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:43:10.829475" level="INFO">Clicking element 'xpath=(//a[@title='Printed Summer Dress'][normalize-space()='Printed Summer Dress'])[2]'.</msg>
+<arg>${BOTAO_SOBREUMPRODUTODRESS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T23:43:10.829036" elapsed="2.699601"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:43:13.701494" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-151.png"&gt;&lt;img src="selenium-screenshot-151.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-18T23:43:13.528914" elapsed="0.172793"/>
+</kw>
+<status status="PASS" start="2025-09-18T23:43:10.439760" elapsed="3.262085"/>
+</kw>
+<kw name="E seleciono o tamanho do produto que quero comprar" owner="kws_catalogodeprodutos">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:13.703436" elapsed="0.000391"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:13.704140" elapsed="0.000456"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Selecionando tamanho do produto</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:13.704835" elapsed="0.000343"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:13.705476" elapsed="0.000379"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${BOTAO_DATASHEET}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-18T23:43:13.706188" elapsed="0.309860"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:43:14.017687" level="INFO">Selecting options from selection list 'id=group_1' by label M.</msg>
+<arg>${BOTAO_SELECAOTAMANHOM}</arg>
+<arg>M</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-09-18T23:43:14.016754" elapsed="0.217339"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:43:14.379465" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-152.png"&gt;&lt;img src="selenium-screenshot-152.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-18T23:43:14.234348" elapsed="0.145257"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:43:14.380034" level="INFO">Typing text '10' into text field 'id=quantity_wanted'.</msg>
+<arg>${BOTAO_ADICIONARQUANTIDADE}</arg>
+<arg>10</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T23:43:14.379804" elapsed="0.117250"/>
+</kw>
+<status status="PASS" start="2025-09-18T23:43:13.702877" elapsed="0.794385"/>
+</kw>
+<kw name="Quando clicar no botão 'Add to cart'" owner="kws_catalogodeprodutos">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:14.498236" elapsed="0.000318"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:14.498789" elapsed="0.000338"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Adicionando o produto ao carrinho</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:14.499354" elapsed="0.000410"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:14.500234" elapsed="0.001090"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${BOTAO_ADICIONARCARRINHO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-18T23:43:14.501603" elapsed="0.303945"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${BOTAO_ADICIONARCARRINHO}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-18T23:43:14.805766" elapsed="0.010256"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:43:14.816646" level="INFO">Clicking element 'xpath=//button[@name="Submit"]/span[text()="Add to cart"]'.</msg>
+<arg>${BOTAO_ADICIONARCARRINHO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T23:43:14.816263" elapsed="0.108709"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T23:43:19.926105" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T23:43:14.925252" elapsed="5.001011"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:43:20.022826" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-153.png"&gt;&lt;img src="selenium-screenshot-153.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-18T23:43:19.926571" elapsed="0.096431"/>
+</kw>
+<status status="PASS" start="2025-09-18T23:43:14.497782" elapsed="5.525389"/>
+</kw>
+<kw name="E clicar no botão 'Proceed to checkout'" owner="kws_catalogodeprodutos">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:20.023927" elapsed="0.000299"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:20.024436" elapsed="0.000317"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Clicando para continuar com a compra</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:20.024979" elapsed="0.000327"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:20.025486" elapsed="0.000210"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:43:20.026031" level="INFO">Clicking element 'xpath=(//span[normalize-space()='Proceed to checkout'])[1]'.</msg>
+<arg>${BOTAO_CONTINUAR_CHECKOUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T23:43:20.025837" elapsed="2.210976"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${TEXTO_NEWSLETTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-18T23:43:22.237053" elapsed="0.301341"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:43:22.656784" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-154.png"&gt;&lt;img src="selenium-screenshot-154.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-18T23:43:22.539109" elapsed="0.117879"/>
+</kw>
+<status status="PASS" start="2025-09-18T23:43:20.023623" elapsed="2.633538"/>
+</kw>
+<kw name="E estou no checkout consigo validar os cálculos do carrinho" owner="kws_catalogodeprodutos">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:22.658399" elapsed="0.000369"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:22.659036" elapsed="0.000413"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Validando valor final da compra no checkout</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:22.659657" elapsed="0.000338"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:22.660267" elapsed="0.000304"/>
+</kw>
+<status status="PASS" start="2025-09-18T23:43:22.657980" elapsed="0.002711"/>
+</kw>
+<kw name="Então usuário consegue validar os cálculos do carrinho avançando para tela de endereço" owner="kws_catalogodeprodutos">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:22.661416" elapsed="0.000268"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:22.661980" elapsed="0.000280"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Valor final da compra no checkout avançando para tela de endereço</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:22.662487" elapsed="0.000414"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>==============================================================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-18T23:43:22.663206" elapsed="0.000462"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:43:22.664262" level="INFO">Clicking element 'xpath=(//a[@title="Proceed to checkout"])[2]'.</msg>
+<arg>${BOTAO_CONTINUAR_CHECKOUT1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T23:43:22.663959" elapsed="1.409934"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${BOTAO_SAVE_ENDERECO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-18T23:43:24.074127" elapsed="0.326596"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${BOTAO_SAVE_ENDERECO}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-18T23:43:24.401524" elapsed="0.012397"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T23:43:26.414816" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T23:43:24.414101" elapsed="2.000836"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-18T23:43:26.502208" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-155.png"&gt;&lt;img src="selenium-screenshot-155.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-18T23:43:26.415146" elapsed="0.087238"/>
+</kw>
+<status status="PASS" start="2025-09-18T23:43:22.661092" elapsed="3.841421"/>
+</kw>
+<kw name="Close Application" owner="hooks" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-18T23:43:26.503510" elapsed="2.637344"/>
+</kw>
+<status status="PASS" start="2025-09-18T23:43:26.503113" elapsed="2.638109"/>
+</kw>
+<tag>CatalogoProdutos</tag>
+<tag>CatalogoProdutosPesquisa</tag>
+<status status="PASS" start="2025-09-18T23:41:50.877983" elapsed="98.263567"/>
+</test>
+<doc>Página com as Keywords do site My Shop Catálogo de Produtos</doc>
+<status status="PASS" start="2025-09-18T23:41:50.505802" elapsed="98.637100"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">CatalogoProdutos</stat>
+<stat pass="1" fail="0" skip="0">CatalogoProdutosPesquisa</stat>
+</tag>
+<suite>
+<stat name="Catalogodeprodutos Testes" id="s1" pass="1" fail="0" skip="0">Catalogodeprodutos Testes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
